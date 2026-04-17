@@ -1449,7 +1449,7 @@ letter-spacing:.3px;
 
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 
-  z-index: 99999; /* 🔥 CAMBIO CLAVE */
+  z-index: 2147483647;  /* 🔥 CAMBIO CLAVE */
 
   cursor: pointer;
   transition: all .3s ease;
