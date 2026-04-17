@@ -1600,6 +1600,17 @@ transform:translateY(0);
 
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+.whatsapp{
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 999999 !important;
+}
+
 /* =========================
 SECCION PAQUETES
 ========================= */
