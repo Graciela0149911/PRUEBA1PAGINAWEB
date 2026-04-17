@@ -1429,28 +1429,34 @@ letter-spacing:.3px;
 ===================== */
 
 .whatsapp{
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
 
-  width: 65px;
-  height: 65px;
+position:fixed;
+bottom:30px;
+right:30px;
 
-  background: linear-gradient(135deg,#25D366,#1ebe5d);
-  border-radius: 50%;
+width:65px;
+height:65px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+background:linear-gradient(135deg,#25D366,#1ebe5d);
 
-  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+border-radius:50%;
 
-  z-index: 2147483647; /* 🔥 CAMBIO CLAVE */
+display:flex;
+align-items:center;
+justify-content:center;
 
-  cursor: pointer;
-  transition: all .3s ease;
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
 
-  animation: floatMove 3s ease-in-out infinite;
+z-index:999;
+
+cursor:pointer;
+
+transition:all .3s ease;
+
+/* ANIMACIONES */
+
+animation:floatMove 3s ease-in-out infinite;
+
 }
 
 /* ICONO */
