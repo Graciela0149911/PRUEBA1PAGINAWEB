@@ -280,87 +280,83 @@ transform:scale(1.15) rotate(8deg);
 
 }
 
+.menu-toggle{
+  display:none;
+  font-size:22px;
+  cursor:pointer;
+  color:#1e293b;
+  transition:.3s;
+}
+
+.menu-toggle:hover{
+  transform:scale(1.15) rotate(8deg);
+}
+
 /* =====================
    NAVBAR MOVIL
 ===================== */
 
 @media (max-width:900px){
 
-header{
+  html, body{
+    overflow-x: hidden; /* 🔥 evita cortes en móvil */
+  }
 
-padding:0 25px;
-height:65px;
+  header{
+    padding:0 25px;
+    height:65px;
+  }
 
-}
+  /* LOGO */
+  .logo-container img{
+    height:45px;
+  }
 
-/* LOGO */
+  /* HAMBURGUESA */
+  .menu-toggle{
+    display:block;
+  }
 
-.logo-container img{
+  /* MENU */
+  nav{
+    position: fixed; /* 🔥 CAMBIO CLAVE */
+    top:65px;
+    left:0;
 
-height:45px;
+    width:100%;
 
-}
+    background:white;
 
-/* HAMBURGUESA */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:22px;
 
-.menu-toggle{
+    padding:35px 0;
 
-display:block;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
 
-}
+    transform:translateY(-30px);
+    opacity:0;
 
-/* MENU */
+    pointer-events:none;
 
-nav{
+    transition:.4s ease;
 
-position:absolute;
+    z-index:1000; /* debajo de WhatsApp */
+  }
 
-top:65px;
-left:0;
+  /* MENU ACTIVO */
+  nav.active{
+    transform:translateY(0);
+    opacity:1;
+    pointer-events:auto;
+  }
 
-width:100%;
-
-background:white;
-
-flex-direction:column;
-
-align-items:center;
-
-gap:22px;
-
-padding:35px 0;
-
-box-shadow:0 15px 40px rgba(0,0,0,0.08);
-
-transform:translateY(-30px);
-
-opacity:0;
-
-pointer-events:none;
-
-transition:.4s ease;
-
-}
-
-/* MENU ACTIVO */
-
-nav.active{
-
-transform:translateY(0);
-
-opacity:1;
-
-pointer-events:auto;
-
-}
-
-/* LINKS */
-
-.nav-link{
-
-font-size:14px;
-
-}
+  /* LINKS */
+  .nav-link{
+    font-size:14px;
+  }
 
 }
 
